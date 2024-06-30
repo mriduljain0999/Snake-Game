@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: "Play", sans-serif;
+}
+.container{
+    background: url('img/bg.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.board{
+    width: 50vw;
+    height: 80vh;
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.852);
+    margin-left: 20vw;
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+.head {
+    background: linear-gradient(135deg, #A52A2A, #8B0000);
+}
+
+.main {
+    background: linear-gradient(135deg, #8BC34A, #558B2F); 
+}
+.food{
+    background: linear-gradient(135deg, #FFFF00, #FFD700);
+}
+.food, .main, .head{
+    border-radius:100%;
+}
+.sty{
+    color: white;
+    font-weight: bold;
+}
+.marks{
+    position: absolute;
+    top: 10vh;
+    right: 8vw;
+}
